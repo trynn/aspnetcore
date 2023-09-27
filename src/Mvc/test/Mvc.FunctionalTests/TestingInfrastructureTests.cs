@@ -137,7 +137,7 @@ public class TestingInfrastructureTests : IClassFixture<WebApplicationFactory<Ba
     }
 
     [Fact]
-    public async Task TestingInfrastructure_RedirectHandlerAllowsToDisableRedirects()
+    public async Task TestingInfrastructure_RedirectHandlerAcceptsMaxRedirectsZero()
     {
         // Act
         var request = new HttpRequestMessage(HttpMethod.Get, "Testing/RedirectHandler/Redirect302");
